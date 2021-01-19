@@ -8,4 +8,12 @@
 // * Use a function to display the result
 // * Use the "{:?}" token in the println macro to display the result
 
-fn main() {}
+fn main() {
+    let three = 3;
+    let four = 4;
+    fn add(a: i32, b: i32) -> i32 {
+        a + b
+    }
+    let seven = add(three, four);
+    println!("three plus four equals {:?}", seven);
+}
