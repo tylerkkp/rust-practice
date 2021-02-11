@@ -16,11 +16,14 @@ enum Color {
     Yellow
 }
 
-fn main() {
-    let choice = Color::Red;
-    match choice {
+fn print_color(my_color: Color) {
+    match my_color {
         Color::Red => println!("Red"),
         Color::Blue => println!("Blue"),
-        Color::Yellow => println!("Yellow"),        
-    };
+        Color::Yellow => println!("Yellow"),
+    }
+}
+
+fn main() {
+    print_color(Color::Yellow);
 }
